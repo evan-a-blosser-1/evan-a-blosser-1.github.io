@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #050422;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1rem;
     text-align: center;
     width: 100%;
@@ -24,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ section {
 
 footer {
     background-color: #030000;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 1rem;
     position: fixed;
