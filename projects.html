@@ -1,71 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            background-color: #000000;
-            color: rgb(252, 255, 252); /* Green text */
-            font-family: Consolas, monospace;
-            max-width: 1200px;  /* Set maximum width */
-            margin: 0 auto;     /* Center the body */
-        }
-        .project-image {
-        max-width: 100%;
-        height: auto;
-        margin-top: 1rem;
-        border: 1px solid #30363d;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Evan A. Blosser</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+.project-section{
+    display:flex;
+    flex-direction:column;
+    gap:120px;
+}
+
+.project{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.project:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.project-content{
+    flex:1;
+}
+
+.project-content h2{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.project-content p{
+    color:var(--ea-muted);
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.project-button{
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:var(--ea-cyan);
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:700;
+}
+
+.project-button:hover{
+    opacity:.85;
+}
+
+.project-image{
+    width:500px;
+    max-width:100%;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.project-icon{
+    font-size:6rem;
+}
+
+@media(max-width:900px){
+
+    .project,
+    .project:nth-child(even){
+
+        flex-direction:column;
+        text-align:center;
+
     }
-    </style>
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <header>
-        <h1>Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>Asteroid Navigator Pre-released under MIT-License</h3>
-                <p>This is a mission tool that allows the user to download shape files
-                    <br> of asteroids, create models, and simulate orbits. The full version
-                    <br> will be capable of planning a mission to any desired asteroid from 
-                    <br> Low Earth Orbit (LEO). 
-                    <br>
-                </p>
-                <a href="https://github.com/evan-a-blosser-1/Asteroid-Navigator/releases/download/version_1.5/Asteroid_Navigator_setup.exe" download>Download File</a>
-                <img src="Images/asteroid_nav.jpg" alt="Asteroid Navigator Screenshot" class="project-image">
-            </div>
-            <div class="project-item">
-                <h3>Color Select</h3>
-                <a href="https://github.com/evan-a-blosser-1/Color_Select/releases/download/Version_1.3/Color_Select_Setup.exe" download>Download File</a>
-                <p>Color Select is a simple program that allows you to select colors directly from your screen
-                    <br>using the Color Picker tool. Or Pick a Color using Microsoft's built-in palette. 
-                    <br>A pre-made color blind friendly palette has also been preloaded.</p>
-                <img src="Images/color select.jpg" alt="Color Select Screenshot" class="project-image">
+
+<div class="ea-background"></div>
+
+<nav class="ea-nav">
+
+    <div class="ea-nav-inner">
+
+        <div class="ea-brand">
+
+            <img src="Images/Logo.png"
+                 alt="Logo"
+                 class="ea-logo">
+
+            <div class="ea-name">
+                EVAN A. BLOSSER
             </div>
 
-        </section>
-    </main>
-    <footer>
-        <p>---</p>
-    </footer>
-    <script src="scripts.js"></script>
+        </div>
+
+        <ul class="ea-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<div class="ea-page">
+
+    <h1>
+        Project Observatory
+    </h1>
+
+    <p>
+        Research software, simulations,
+        engineering tools, and scientific
+        computing applications developed for
+        aerospace engineering and asteroid dynamics.
+    </p>
+
+    <br><br>
+
+    <div class="project-section">
+
+        <div class="project">
+
+            <div class="project-content">
+
+                <div class="project-icon">
+                    ☄
+                </div>
+
+                <h2>
+                    Asteroid Navigator
+                </h2>
+
+                <p>
+                    Mission planning and orbital
+                    analysis software for asteroid
+                    exploration. Generate gravity fields,
+                    investigate trajectories,
+                    and work with detailed
+                    asteroid shape models.
+                </p>
+
+                <a
+                class="project-button"
+                href="https://github.com/evan-a-blosser-1/Asteroid-Navigator/releases/download/version_1.5/Asteroid_Navigator_setup.exe">
+
+                    Download
+
+                </a>
+
+            </div>
+
+            <img
+            src="Images/asteroid_nav.jpg"
+            alt="Asteroid Navigator"
+            class="project-image">
+
+        </div>
+
+        <div class="project">
+
+            <div class="project-content">
+
+                <div class="project-icon">
+                    🎨
+                </div>
+
+                <h2>
+                    Color Select
+                </h2>
+
+                <p>
+                    Desktop utility for color
+                    acquisition and palette generation.
+                    Includes colorblind-friendly workflows
+                    and direct screen sampling tools.
+                </p>
+
+                <a
+                class="project-button"
+                href="https://github.com/evan-a-blosser-1/Color_Select/releases/download/Version_1.3/Color_Select_Setup.exe">
+
+                    Download
+
+                </a>
+
+            </div>
+
+            <img
+            src="Images/color select.jpg"
+            alt="Color Select"
+            class="project-image">
+
+        </div>
+
+        <div class="project">
+
+            <div class="project-content">
+
+                <div class="project-icon">
+                    🛰
+                </div>
+
+                <h2>
+                    Future Research Tools
+                </h2>
+
+                <p>
+                    Upcoming software involving
+                    orbit propagation,
+                    spacecraft control,
+                    CFD analysis,
+                    scientific visualization,
+                    and mission design.
+                </p>
+
+                <a
+                class="project-button"
+                href="#">
+
+                    Coming Soon
+
+                </a>
+
+            </div>
+
+            <img
+            src="Images/placeholder.jpg"
+            alt="Future Project"
+            class="project-image">
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © Evan A. Blosser
+</footer>
+
 </body>
 </html>

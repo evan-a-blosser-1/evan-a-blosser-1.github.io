@@ -1,53 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume/CSV</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            background-color: #000000;
-            max-width: 1200px;  /* Set maximum width */
-            margin: 0 auto;     /* Center the body */
-        }
 
-    </style>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume | Evan A. Blosser</title>
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="resume">
-            <h2>Resume/CSV</h2>
-            <!-- PDF Viewer -->
-            <div class="pdf-container" style="width: 900px; height: 1100px;">
-                <object
-                    data="Images/Resume_EvanB.pdf"
-                    type="application/pdf"
-                    width="100%"
-                    height="100%">
-                    <p>It appears you don't have a PDF plugin for this browser. 
-                    You can <a href="Images/Resume_EvanB.pdf">click here to download the PDF file.</a></p>
-                </object>
+
+<div class="ea-background"></div>
+
+<nav class="ea-nav">
+
+    <div class="ea-nav-inner">
+
+        <div class="ea-brand">
+
+            <img src="Images/Logo.png"
+                 alt="Logo"
+                 class="ea-logo">
+
+            <div class="ea-name">
+                EVAN A. BLOSSER
             </div>
-        </section>
-    </main>
-    <footer>
-        <p> ----/p>
-    </footer>
-    <script src="scripts.js"></script>
+
+        </div>
+
+        <ul class="ea-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<div class="ea-page">
+
+    <h1>
+        Resume & Curriculum Vitae
+    </h1>
+
+    <p>
+        Education, research experience,
+        aerospace engineering projects,
+        publications, software development,
+        and technical competencies.
+    </p>
+
+    <br>
+
+    <div style="text-align:center; margin-bottom:30px;">
+
+        <a
+        href="Images/Evan_Blosser_Resume_2026.pdf"
+        target="_blank"
+        style="
+            display:inline-block;
+            padding:12px 24px;
+            background:var(--ea-cyan);
+            color:black;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:700;
+        ">
+            Open PDF
+        </a>
+
+    </div>
+
+    <div
+    style="
+        width:100%;
+        height:1200px;
+
+        border:1px solid rgba(255,255,255,.08);
+
+        border-radius:25px;
+
+        overflow:hidden;
+
+        background:rgba(255,255,255,.03);
+    ">
+
+        <object
+        data="Images/Evan_Blosser_Resume_2026.pdf"
+        type="application/pdf"
+        width="100%"
+        height="100%">
+
+            <p>
+
+                Your browser does not support
+                embedded PDFs.
+
+                <br><br>
+
+                <a href="Images/Evan_Blosser_Resume_2026.pdf">
+                    Download Resume
+                </a>
+
+            </p>
+
+        </object>
+
+    </div>
+
+</div>
+
+<footer>
+    © Evan A. Blosser
+</footer>
+
 </body>
 </html>
