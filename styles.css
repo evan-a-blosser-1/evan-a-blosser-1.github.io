@@ -221,6 +221,31 @@ body{
     color:white;
     margin:20px 0;
 }
+.paragraph-with-legend {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.paragraph-with-legend p {
+  flex: 1;
+}
+
+.legend-image {
+  width: 180px;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .paragraph-with-legend {
+    flex-direction: column;
+  }
+
+  .legend-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 
 /* ========================= */
 /* PAGE CONTENT              */
