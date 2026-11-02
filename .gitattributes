@@ -1,0 +1,2 @@
+ring_animation.mp4 filter=lfs diff=lfs merge=lfs -text
+Images/ring_animation.mp4 filter=lfs diff=lfs merge=lfs -text
