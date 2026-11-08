@@ -197,6 +197,14 @@ body{
     overflow:hidden;
 }
 
+.ea-panel > iframe{
+    width:100%;
+    aspect-ratio:16 / 9;
+    height:auto;
+    display:block;
+    border:0;
+}
+
 .ea-gif{
     width:100%;
     display:block;
@@ -247,14 +255,7 @@ body{
   }
 }
 
-.ea-panel > iframe {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  aspect-ratio: 16 / 9;
-  margin: 0 auto;
-  border: 0;
-}
+
 /* ========================= */
 /* PAGE CONTENT              */
 /* ========================= */
